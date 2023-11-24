@@ -1,0 +1,15 @@
+app:
+  name: test-poi-backend-app
+  namespace: test
+  cluster: .apps.rosa-pzz6v.9nln.p1.openshiftapps.com
+
+git:
+  branch: main
+  repo: https://github.com/rhdh23-demo/test-backend
+  org: rhdh23-demo
+  name: test-backend
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: test/poi-backend-app
+  tag: latest
